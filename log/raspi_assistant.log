@@ -1,0 +1,83 @@
+2016-11-25 11:03:03,205 loop:40 [INFO] Initializing...
+2016-11-25 11:03:03,214 _new_conn:756 [INFO] Starting new HTTPS connection (1): openapi.baidu.com
+2016-11-25 11:04:04,303 loop:40 [INFO] Initializing...
+2016-11-25 11:04:04,312 _new_conn:756 [INFO] Starting new HTTPS connection (1): openapi.baidu.com
+2016-11-25 11:06:23,922 start:173 [INFO] Keyword 1 detected at time: 2016-11-25 11:06:23
+2016-11-25 11:06:23,923 start:190 [INFO] Detection status: 0, VAD: False
+2016-11-25 11:06:24,328 start:190 [INFO] Detection status: 0, VAD: False
+2016-11-25 11:06:24,732 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-25 11:06:25,138 start:190 [INFO] Detection status: 0, VAD: False
+2016-11-25 11:06:25,542 _new_conn:207 [INFO] Starting new HTTP connection (1): vop.baidu.com
+2016-11-25 11:06:26,410 process:63 [INFO] ==Recognition result==: ，
+2016-11-25 11:06:26,412 _new_conn:207 [INFO] Starting new HTTP connection (1): idc.emotibot.com
+2016-11-25 11:06:29,577 _new_conn:207 [INFO] Starting new HTTP connection (1): tsn.baidu.com
+2016-11-25 11:06:30,110 worker:91 [INFO] User: ，
+Mirror: 魔镜出去一下,请稍等片刻,马上回来~~
+Cost(s): 4.57 Chat(s): 3.16
+2016-11-25 11:06:30,995 start:173 [INFO] Keyword 1 detected at time: 2016-11-25 11:06:30
+2016-11-25 11:06:30,995 start:190 [INFO] Detection status: 0, VAD: False
+2016-11-25 11:06:31,403 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-25 11:06:31,811 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-25 11:06:32,216 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-25 11:06:32,620 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-25 11:06:33,030 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-25 11:06:33,435 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-25 11:06:33,842 _new_conn:207 [INFO] Starting new HTTP connection (1): vop.baidu.com
+2016-11-25 11:06:35,796 process:63 [INFO] ==Recognition result==: 请稍等片刻，
+2016-11-25 11:06:35,797 _new_conn:207 [INFO] Starting new HTTP connection (1): idc.emotibot.com
+2016-11-25 11:06:37,779 _new_conn:207 [INFO] Starting new HTTP connection (1): tsn.baidu.com
+2016-11-25 11:06:38,022 worker:91 [INFO] User: 请稍等片刻，
+Mirror: 中字!中字
+Cost(s): 4.19 Chat(s): 1.98
+2016-11-25 11:06:44,690 loop:48 [INFO] Assistant closed...
+2016-11-25 11:06:48,762 loop:40 [INFO] Initializing...
+2016-11-25 11:06:48,770 _new_conn:756 [INFO] Starting new HTTPS connection (1): openapi.baidu.com
+2016-11-25 11:06:53,294 start:173 [INFO] Keyword 1 detected at time: 2016-11-25 11:06:53
+2016-11-25 11:06:53,294 start:190 [INFO] Detection status: 0, VAD: False
+2016-11-25 11:06:53,698 start:190 [INFO] Detection status: 0, VAD: False
+2016-11-25 11:06:54,103 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-25 11:06:54,513 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-25 11:06:54,923 start:190 [INFO] Detection status: 0, VAD: False
+2016-11-25 11:06:55,327 _new_conn:207 [INFO] Starting new HTTP connection (1): vop.baidu.com
+2016-11-25 11:06:56,516 process:63 [INFO] ==Recognition result==: 那几点，
+2016-11-25 11:06:56,518 _new_conn:207 [INFO] Starting new HTTP connection (1): idc.emotibot.com
+2016-11-25 11:06:58,365 _new_conn:207 [INFO] Starting new HTTP connection (1): tsn.baidu.com
+2016-11-25 11:06:58,623 worker:91 [INFO] User: 那几点，
+Mirror: 已经能查了
+Cost(s): 3.30 Chat(s): 1.85
+2016-11-25 11:10:00,929 start:173 [INFO] Keyword 1 detected at time: 2016-11-25 11:10:00
+2016-11-25 11:10:00,930 start:190 [INFO] Detection status: 0, VAD: False
+2016-11-25 11:10:01,336 start:190 [INFO] Detection status: 0, VAD: False
+2016-11-25 11:10:01,742 start:190 [INFO] Detection status: 0, VAD: False
+2016-11-25 11:10:02,148 start:190 [INFO] Detection status: 0, VAD: False
+2016-11-25 11:10:02,552 start:190 [INFO] Detection status: 0, VAD: False
+2016-11-25 11:10:02,961 start:190 [INFO] Detection status: 0, VAD: False
+2016-11-25 11:10:03,370 start:190 [INFO] Detection status: 0, VAD: False
+2016-11-25 11:10:03,776 _new_conn:207 [INFO] Starting new HTTP connection (1): vop.baidu.com
+2016-11-25 11:10:13,795 receive:60 [WARNING] ==Baidu ASR failed==: Traceback (most recent call last):
+  File "/Users/juncaofish/projects/rpi-hmi-bot/handler.py", line 58, in receive
+    return self.bv.asr(data, rate)
+  File "/Users/juncaofish/projects/rpi-hmi-bot/voicetools/api.py", line 179, in asr
+    return baiduclient.asr(json_data)
+  File "/Users/juncaofish/projects/rpi-hmi-bot/voicetools/clients.py", line 92, in asr
+    raise e
+ReadTimeout: HTTPConnectionPool(host='vop.baidu.com', port=80): Read timed out. (read timeout=10)
+
+2016-11-25 11:10:13,796 worker:94 [WARNING] ==worker failed==:, Traceback (most recent call last):
+  File "/Users/juncaofish/projects/rpi-hmi-bot/handler.py", line 84, in worker
+    func, result = self.process(results)
+  File "/Users/juncaofish/projects/rpi-hmi-bot/handler.py", line 63, in process
+    logger.info('==Recognition result==: %s', results[0])
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+2016-11-25 11:11:32,767 loop:48 [INFO] Assistant closed...
+2016-11-25 11:11:35,302 loop:38 [INFO] Initializing...
+2016-11-25 11:11:35,311 _new_conn:756 [INFO] Starting new HTTPS connection (1): openapi.baidu.com
+2016-11-25 11:11:36,700 signal_handler:18 [INFO] Interrupted...
+2016-11-25 11:11:36,860 loop:46 [INFO] Assistant closed...
+2016-11-25 11:11:41,794 loop:38 [INFO] Initializing...
+2016-11-25 11:11:41,803 _new_conn:756 [INFO] Starting new HTTPS connection (1): openapi.baidu.com
+2016-11-25 11:12:01,208 loop:38 [INFO] Initializing...
+2016-11-25 11:12:01,217 _new_conn:756 [INFO] Starting new HTTPS connection (1): openapi.baidu.com
+2016-11-25 11:12:50,850 signal_handler:18 [INFO] Interrupted...
+2016-11-25 11:12:51,012 loop:46 [INFO] Assistant closed...

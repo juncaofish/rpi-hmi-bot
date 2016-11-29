@@ -53,7 +53,7 @@ def play_audio_file(fname=DETECT_DING):
         rate=ding_wav.getframerate(), input=False, output=True)
     stream_out.start_stream()
     stream_out.write(ding_data)
-    time.sleep(0.2)
+    time.sleep(0.1)
     stream_out.stop_stream()
     stream_out.close()
     audio.terminate()
@@ -171,20 +171,20 @@ class HotwordDetector(object):
                 message += time.strftime("%Y-%m-%d %H:%M:%S",
                                          time.localtime(time.time()))
                 logger.info(message)
+                play_audio_file(fname=DETECT_DING)
                 callback = detected_callback[ans-1]
                 if callback is not None:
                     listen = True
                     listen_history = []
                     cnt = 0
-                    VAD_DELAY = 0.4
-                    MAX_CNT = int(2.8/VAD_DELAY)
+                    VAD_DELAY = 0.2
+                    MAX_CNT = int(3/VAD_DELAY)
                     vad_trig = False
-
                     vad.reset()
                     while listen:
                         data = self.ring_buffer.get()
                         active = vad.is_speech(data)
-                        if active:
+                        if active and cnt > 1:
                             vad_trig = True
                         ans = self.detector.RunDetection(data)
                         logger.info("Detection status: %d, VAD: %s" % (ans, active))

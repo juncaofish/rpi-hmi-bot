@@ -20,6 +20,7 @@ class BaseClient(object):
                 url=url,
                 json=data,
                 headers=headers,
+                verify=False,
                 timeout=(connect_timeout, request_timeout)
             )
         except Exception, e:
@@ -38,6 +39,7 @@ class BaseClient(object):
                 url=url,
                 params=params,
                 headers=headers,
+                verify=False,
                 timeout=(connect_timeout, request_timeout)
             )
             return resp

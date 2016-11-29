@@ -31,6 +31,7 @@ class Emotibot(object):
 
     @staticmethod
     def json_parser(retdata):
+        func_list = ['tts']
         try:
             reply = retdata[0].get('value')
             fun_type = retdata[0].get('cmd')
@@ -42,7 +43,9 @@ class Emotibot(object):
                 reply = ",".join(title)
 
             elif fun_type == 'reminder':
-                return reply
+                func_list.append('reminder')
+                args = [reply, retdata]
+                return func_list, args
 
             elif fun_type == 'cooking':
                 articles = retdata[0].get('data')
@@ -124,7 +127,7 @@ class Emotibot(object):
             print str(e)
             reply = u"访问次数上限，明天请早。"
 
-        return reply
+        return func_list, [reply]
 
 
 class BaiduVoice(object):

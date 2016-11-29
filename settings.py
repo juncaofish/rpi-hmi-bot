@@ -13,8 +13,8 @@ class BasicConfig(object):
 
     VOICE_API_KEY = 'dAkc6QvjXOR7eGeD9GcRRS9a'
     VOICE_SECRET = 'KfaFUjPjBchCKcuLU6yw1YdnbwrL1Cl9'
-    APP_ID = '20ff0b1b79c8e61dcadc2b1898614566'
-    USER_ID = '07B4470E963B99F3ADC6C9C3A5C37DEEE'
+    APP_ID = '9d152115e232a48c2edea2d44825232b'
+    USER_ID = '06C6D39DA8A3C205EDEE821C1202BFC97'
     INPUT_NAME = 'record.wav'
     OUTPUT_NAME = 'output.wav'
     OUTPUT_MP3_NAME = os.path.join(ROOT_DIR, 'output.mp3')
@@ -23,12 +23,17 @@ class BasicConfig(object):
 class HotwordConfig(object):
     if platform.system() == 'Darwin':
         HOTWORD_MODEL = os.path.join(ROOT_DIR, 'snowboy/models/magic.pmdl')
-        SENSITIVITY = 0.5
-        GAIN = 2
+        SENSITIVITY = 0.45
+        GAIN = 1
     elif platform.system() == 'Linux':
         HOTWORD_MODEL = os.path.join(ROOT_DIR, 'snowboy/models/rpi_magic.pmdl')
         SENSITIVITY = 0.4
         GAIN = 2
+
+
+class ReminderConfig(object):
+    DB_PATH = os.path.join(ROOT_DIR, 'db/reminder.db')
+    DB_TABLE = 'reminder'
 
 
 class GPIOConfig(object):

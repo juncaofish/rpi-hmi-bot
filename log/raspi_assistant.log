@@ -1,83 +1,398 @@
-2016-11-25 11:03:03,205 loop:40 [INFO] Initializing...
-2016-11-25 11:03:03,214 _new_conn:756 [INFO] Starting new HTTPS connection (1): openapi.baidu.com
-2016-11-25 11:04:04,303 loop:40 [INFO] Initializing...
-2016-11-25 11:04:04,312 _new_conn:756 [INFO] Starting new HTTPS connection (1): openapi.baidu.com
-2016-11-25 11:06:23,922 start:173 [INFO] Keyword 1 detected at time: 2016-11-25 11:06:23
-2016-11-25 11:06:23,923 start:190 [INFO] Detection status: 0, VAD: False
-2016-11-25 11:06:24,328 start:190 [INFO] Detection status: 0, VAD: False
-2016-11-25 11:06:24,732 start:190 [INFO] Detection status: 0, VAD: True
-2016-11-25 11:06:25,138 start:190 [INFO] Detection status: 0, VAD: False
-2016-11-25 11:06:25,542 _new_conn:207 [INFO] Starting new HTTP connection (1): vop.baidu.com
-2016-11-25 11:06:26,410 process:63 [INFO] ==Recognition result==: ，
-2016-11-25 11:06:26,412 _new_conn:207 [INFO] Starting new HTTP connection (1): idc.emotibot.com
-2016-11-25 11:06:29,577 _new_conn:207 [INFO] Starting new HTTP connection (1): tsn.baidu.com
-2016-11-25 11:06:30,110 worker:91 [INFO] User: ，
-Mirror: 魔镜出去一下,请稍等片刻,马上回来~~
-Cost(s): 4.57 Chat(s): 3.16
-2016-11-25 11:06:30,995 start:173 [INFO] Keyword 1 detected at time: 2016-11-25 11:06:30
-2016-11-25 11:06:30,995 start:190 [INFO] Detection status: 0, VAD: False
-2016-11-25 11:06:31,403 start:190 [INFO] Detection status: 0, VAD: True
-2016-11-25 11:06:31,811 start:190 [INFO] Detection status: 0, VAD: True
-2016-11-25 11:06:32,216 start:190 [INFO] Detection status: 0, VAD: True
-2016-11-25 11:06:32,620 start:190 [INFO] Detection status: 0, VAD: True
-2016-11-25 11:06:33,030 start:190 [INFO] Detection status: 0, VAD: True
-2016-11-25 11:06:33,435 start:190 [INFO] Detection status: 0, VAD: True
-2016-11-25 11:06:33,842 _new_conn:207 [INFO] Starting new HTTP connection (1): vop.baidu.com
-2016-11-25 11:06:35,796 process:63 [INFO] ==Recognition result==: 请稍等片刻，
-2016-11-25 11:06:35,797 _new_conn:207 [INFO] Starting new HTTP connection (1): idc.emotibot.com
-2016-11-25 11:06:37,779 _new_conn:207 [INFO] Starting new HTTP connection (1): tsn.baidu.com
-2016-11-25 11:06:38,022 worker:91 [INFO] User: 请稍等片刻，
-Mirror: 中字!中字
-Cost(s): 4.19 Chat(s): 1.98
-2016-11-25 11:06:44,690 loop:48 [INFO] Assistant closed...
-2016-11-25 11:06:48,762 loop:40 [INFO] Initializing...
-2016-11-25 11:06:48,770 _new_conn:756 [INFO] Starting new HTTPS connection (1): openapi.baidu.com
-2016-11-25 11:06:53,294 start:173 [INFO] Keyword 1 detected at time: 2016-11-25 11:06:53
-2016-11-25 11:06:53,294 start:190 [INFO] Detection status: 0, VAD: False
-2016-11-25 11:06:53,698 start:190 [INFO] Detection status: 0, VAD: False
-2016-11-25 11:06:54,103 start:190 [INFO] Detection status: 0, VAD: True
-2016-11-25 11:06:54,513 start:190 [INFO] Detection status: 0, VAD: True
-2016-11-25 11:06:54,923 start:190 [INFO] Detection status: 0, VAD: False
-2016-11-25 11:06:55,327 _new_conn:207 [INFO] Starting new HTTP connection (1): vop.baidu.com
-2016-11-25 11:06:56,516 process:63 [INFO] ==Recognition result==: 那几点，
-2016-11-25 11:06:56,518 _new_conn:207 [INFO] Starting new HTTP connection (1): idc.emotibot.com
-2016-11-25 11:06:58,365 _new_conn:207 [INFO] Starting new HTTP connection (1): tsn.baidu.com
-2016-11-25 11:06:58,623 worker:91 [INFO] User: 那几点，
-Mirror: 已经能查了
-Cost(s): 3.30 Chat(s): 1.85
-2016-11-25 11:10:00,929 start:173 [INFO] Keyword 1 detected at time: 2016-11-25 11:10:00
-2016-11-25 11:10:00,930 start:190 [INFO] Detection status: 0, VAD: False
-2016-11-25 11:10:01,336 start:190 [INFO] Detection status: 0, VAD: False
-2016-11-25 11:10:01,742 start:190 [INFO] Detection status: 0, VAD: False
-2016-11-25 11:10:02,148 start:190 [INFO] Detection status: 0, VAD: False
-2016-11-25 11:10:02,552 start:190 [INFO] Detection status: 0, VAD: False
-2016-11-25 11:10:02,961 start:190 [INFO] Detection status: 0, VAD: False
-2016-11-25 11:10:03,370 start:190 [INFO] Detection status: 0, VAD: False
-2016-11-25 11:10:03,776 _new_conn:207 [INFO] Starting new HTTP connection (1): vop.baidu.com
-2016-11-25 11:10:13,795 receive:60 [WARNING] ==Baidu ASR failed==: Traceback (most recent call last):
-  File "/Users/juncaofish/projects/rpi-hmi-bot/handler.py", line 58, in receive
+2016-11-28 00:11:33,654 start:173 [INFO] Keyword 1 detected at time: 2016-11-28 00:11:33
+2016-11-28 00:11:34,513 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 00:11:34,720 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 00:11:34,926 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 00:11:35,135 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 00:11:35,338 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 00:11:35,540 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 00:11:35,745 start:190 [INFO] Detection status: 0, VAD: False
+2016-11-28 00:11:35,951 _new_conn:207 [INFO] Starting new HTTP connection (1): vop.baidu.com
+2016-11-28 00:11:36,950 process:51 [INFO] ==Recognition result==: 几点了，
+2016-11-28 00:11:36,953 _new_conn:207 [INFO] Starting new HTTP connection (1): idc.emotibot.com
+2016-11-28 00:11:38,626 _new_conn:207 [INFO] Starting new HTTP connection (1): tsn.baidu.com
+2016-11-28 00:11:38,990 worker:106 [INFO] User: 现在是北京时间 00:11。你知道时间还问我，你好坏。
+Mirror: [u'\u73b0\u5728\u662f\u5317\u4eac\u65f6\u95f4 00:11\u3002\u4f60\u77e5\u9053\u65f6\u95f4\u8fd8\u95ee\u6211\uff0c\u4f60\u597d\u574f\u3002']
+Cost(s): 3.04 Chat(s): 1.67
+2016-11-28 00:11:50,420 start:173 [INFO] Keyword 1 detected at time: 2016-11-28 00:11:50
+2016-11-28 00:11:51,284 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 00:11:51,491 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 00:11:51,696 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 00:11:51,900 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 00:11:52,107 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 00:11:52,312 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 00:11:52,516 start:190 [INFO] Detection status: 0, VAD: False
+2016-11-28 00:11:52,724 _new_conn:207 [INFO] Starting new HTTP connection (1): vop.baidu.com
+2016-11-28 00:11:53,873 process:51 [INFO] ==Recognition result==: 我要睡觉，
+2016-11-28 00:11:53,875 _new_conn:207 [INFO] Starting new HTTP connection (1): idc.emotibot.com
+2016-11-28 00:11:56,538 _new_conn:207 [INFO] Starting new HTTP connection (1): tsn.baidu.com
+2016-11-28 00:11:56,789 worker:106 [INFO] User: 今天就酱了，过路先森明天再折腾你吧
+Mirror: [u'\u4eca\u5929\u5c31\u9171\u4e86\uff0c\u8fc7\u8def\u5148\u68ee\u660e\u5929\u518d\u6298\u817e\u4f60\u5427']
+Cost(s): 4.07 Chat(s): 2.66
+2016-11-28 11:07:01,089 signal_handler:18 [INFO] Interrupted...
+2016-11-28 11:07:01,206 loop:46 [INFO] Assistant closed...
+2016-11-28 12:17:35,186 loop:38 [INFO] Initializing...
+2016-11-28 12:17:35,198 _new_conn:756 [INFO] Starting new HTTPS connection (1): openapi.baidu.com
+2016-11-28 12:17:38,473 start:173 [INFO] Keyword 1 detected at time: 2016-11-28 12:17:38
+2016-11-28 12:17:39,434 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:17:39,640 start:190 [INFO] Detection status: 0, VAD: False
+2016-11-28 12:17:39,846 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:17:40,053 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:17:40,260 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:17:40,469 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:17:40,677 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:17:40,884 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:17:41,091 start:190 [INFO] Detection status: 1, VAD: True
+2016-11-28 12:17:41,091 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:17:41,299 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:17:41,502 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:17:41,706 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:17:41,914 start:190 [INFO] Detection status: 0, VAD: False
+2016-11-28 12:17:42,122 _new_conn:207 [INFO] Starting new HTTP connection (1): vop.baidu.com
+2016-11-28 12:17:43,115 process:51 [INFO] ==Recognition result==: 去，
+2016-11-28 12:17:43,118 _new_conn:207 [INFO] Starting new HTTP connection (1): idc.emotibot.com
+2016-11-28 12:17:44,970 _new_conn:207 [INFO] Starting new HTTP connection (1): tsn.baidu.com
+2016-11-28 12:17:45,287 worker:106 [INFO] User: 怎么了？
+Mirror: [u'\u600e\u4e48\u4e86\uff1f']
+Cost(s): 3.17 Chat(s): 1.85
+2016-11-28 12:17:47,063 start:173 [INFO] Keyword 1 detected at time: 2016-11-28 12:17:47
+2016-11-28 12:17:47,927 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:17:48,132 start:190 [INFO] Detection status: -2, VAD: False
+2016-11-28 12:17:48,337 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:17:48,543 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:17:48,751 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:17:48,960 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:17:49,167 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:17:49,371 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:17:49,576 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:17:49,784 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:17:49,993 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:17:50,199 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:17:50,407 start:190 [INFO] Detection status: 0, VAD: False
+2016-11-28 12:17:50,618 _new_conn:207 [INFO] Starting new HTTP connection (1): vop.baidu.com
+2016-11-28 12:17:55,408 process:51 [INFO] ==Recognition result==: 提醒我半小时之后吃药，
+2016-11-28 12:17:55,410 _new_conn:207 [INFO] Starting new HTTP connection (1): idc.emotibot.com
+2016-11-28 12:17:57,470 _new_conn:207 [INFO] Starting new HTTP connection (1): tsn.baidu.com
+2016-11-28 12:17:58,213 worker:106 [INFO] User: 好的,过路先森会在:2016年11月28日周一12:47提醒你:吃药
+Mirror: [u'\u597d\u7684,\u8fc7\u8def\u5148\u68ee\u4f1a\u5728:2016\u5e7411\u670828\u65e5\u5468\u4e0012:47\u63d0\u9192\u4f60:\u5403\u836f', [{u'data': [{u'picurl': u'https://mmbiz.qlogo.cn/mmbiz/4UgDk0zQEIiahl7oPbzNK8cP2ibUABk9S4icE2MPIJUBuPiclLRVImt02r1aogibGPnqhiaHLic4FELyaSlZEO7NGJEdA/0', u'description': u'', u'title': u' \u521b\u5efa\u63d0\u9192\u6210\u529f'}, {u'picurl': u'https://mmbiz.qlogo.cn/mmbiz/4UgDk0zQEIiahl7oPbzNK8cP2ibUABk9S4vA47fKy94Y15icvLFQ8J0LlRAy1nwZu6DusDuuGYNr0mJYXExvsypjA/0', u'description': u'', u'title': u'\u65f6\u95f4: 2016\u5e7411\u670828\u65e5  \u5468\u4e00 12:47'}, {u'picurl': u'https://mmbiz.qlogo.cn/mmbiz/4UgDk0zQEIiahl7oPbzNK8cP2ibUABk9S4HYZgdvLZxYJ4TUxibWklS09Dkqv6kibenQ0jiaeLtaT6BQVCYsfwTzIGw/0', u'description': u'DESCRIPTION', u'title': u'\u4e8b\u4ef6: \u5403\u836f'}, {u'picurl': u'', u'description': u'', u'title': u'\u5bf9\u8fc7\u8def\u5148\u68ee\u8bf4\u300c\u67e5\u770b\u63d0\u9192\u4e8b\u9879\u300d,\u8fc7\u8def\u5148\u68ee\u53ef\u4ee5\u4e3a\u60a8\u5c55\u73b0\u6700\u8fd1\u7684\u63d0\u9192\u4e8b\u9879\u54e6'}], u'cmd': u'reminder', u'type': u'text', u'value': u'\u597d\u7684,\u8fc7\u8def\u5148\u68ee\u4f1a\u5728:2016\u5e7411\u670828\u65e5\u5468\u4e0012:47\u63d0\u9192\u4f60:\u5403\u836f'}]]
+Cost(s): 7.60 Chat(s): 2.06
+2016-11-28 12:18:12,659 start:173 [INFO] Keyword 1 detected at time: 2016-11-28 12:18:12
+2016-11-28 12:18:13,519 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:18:13,726 start:190 [INFO] Detection status: -2, VAD: True
+2016-11-28 12:18:13,931 start:190 [INFO] Detection status: -2, VAD: True
+2016-11-28 12:18:28,916 start:173 [INFO] Keyword 1 detected at time: 2016-11-28 12:18:28
+2016-11-28 12:18:29,780 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:18:29,988 start:190 [INFO] Detection status: -2, VAD: True
+2016-11-28 12:18:30,196 start:190 [INFO] Detection status: -2, VAD: False
+2016-11-28 12:18:30,400 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:18:30,604 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:18:30,813 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:18:31,016 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:18:31,225 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:18:31,432 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:18:31,641 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:18:31,850 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:18:32,053 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:18:32,257 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:18:32,461 start:190 [INFO] Detection status: 0, VAD: False
+2016-11-28 12:18:32,669 _new_conn:207 [INFO] Starting new HTTP connection (1): vop.baidu.com
+2016-11-28 12:18:34,422 process:51 [INFO] ==Recognition result==: 提醒我半个小时之后吃药，
+2016-11-28 12:18:34,424 _new_conn:207 [INFO] Starting new HTTP connection (1): idc.emotibot.com
+2016-11-28 12:18:36,902 _new_conn:207 [INFO] Starting new HTTP connection (1): tsn.baidu.com
+2016-11-28 12:18:37,528 worker:106 [INFO] User: 好的,过路先森会在:2016年11月28日周一12:48提醒你:吃药
+Mirror: [u'\u597d\u7684,\u8fc7\u8def\u5148\u68ee\u4f1a\u5728:2016\u5e7411\u670828\u65e5\u5468\u4e0012:48\u63d0\u9192\u4f60:\u5403\u836f', [{u'data': [{u'picurl': u'https://mmbiz.qlogo.cn/mmbiz/4UgDk0zQEIiahl7oPbzNK8cP2ibUABk9S4icE2MPIJUBuPiclLRVImt02r1aogibGPnqhiaHLic4FELyaSlZEO7NGJEdA/0', u'description': u'', u'title': u' \u521b\u5efa\u63d0\u9192\u6210\u529f'}, {u'picurl': u'https://mmbiz.qlogo.cn/mmbiz/4UgDk0zQEIiahl7oPbzNK8cP2ibUABk9S4vA47fKy94Y15icvLFQ8J0LlRAy1nwZu6DusDuuGYNr0mJYXExvsypjA/0', u'description': u'', u'title': u'\u65f6\u95f4: 2016\u5e7411\u670828\u65e5  \u5468\u4e00 12:48'}, {u'picurl': u'https://mmbiz.qlogo.cn/mmbiz/4UgDk0zQEIiahl7oPbzNK8cP2ibUABk9S4HYZgdvLZxYJ4TUxibWklS09Dkqv6kibenQ0jiaeLtaT6BQVCYsfwTzIGw/0', u'description': u'DESCRIPTION', u'title': u'\u4e8b\u4ef6: \u5403\u836f'}, {u'picurl': u'', u'description': u'', u'title': u'\u5bf9\u8fc7\u8def\u5148\u68ee\u8bf4\u300c\u67e5\u770b\u63d0\u9192\u4e8b\u9879\u300d,\u8fc7\u8def\u5148\u68ee\u53ef\u4ee5\u4e3a\u60a8\u5c55\u73b0\u6700\u8fd1\u7684\u63d0\u9192\u4e8b\u9879\u54e6'}], u'cmd': u'reminder', u'type': u'text', u'value': u'\u597d\u7684,\u8fc7\u8def\u5148\u68ee\u4f1a\u5728:2016\u5e7411\u670828\u65e5\u5468\u4e0012:48\u63d0\u9192\u4f60:\u5403\u836f'}]]
+Cost(s): 4.86 Chat(s): 2.48
+2016-11-28 12:18:42,958 start:173 [INFO] Keyword 1 detected at time: 2016-11-28 12:18:42
+2016-11-28 12:18:43,820 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:18:44,028 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:18:44,232 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:18:44,436 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:18:44,645 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:18:44,853 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:18:45,061 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:18:45,269 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:18:45,477 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:18:45,685 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:18:45,893 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:18:46,102 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:18:46,306 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:18:46,513 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:18:46,719 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:18:46,924 start:190 [INFO] Detection status: 0, VAD: False
+2016-11-28 12:18:47,133 _new_conn:207 [INFO] Starting new HTTP connection (1): vop.baidu.com
+2016-11-28 12:18:53,773 process:51 [INFO] ==Recognition result==: 视频网络，
+2016-11-28 12:18:53,775 _new_conn:207 [INFO] Starting new HTTP connection (1): idc.emotibot.com
+2016-11-28 12:18:57,298 _new_conn:207 [INFO] Starting new HTTP connection (1): tsn.baidu.com
+2016-11-28 12:18:57,655 worker:106 [INFO] User: 过路先森还不能播视频给你看，但总有一天我会学会的~
+Mirror: [u'\u8fc7\u8def\u5148\u68ee\u8fd8\u4e0d\u80fd\u64ad\u89c6\u9891\u7ed9\u4f60\u770b\uff0c\u4f46\u603b\u6709\u4e00\u5929\u6211\u4f1a\u5b66\u4f1a\u7684~']
+Cost(s): 10.53 Chat(s): 3.52
+2016-11-28 12:19:13,454 start:173 [INFO] Keyword 1 detected at time: 2016-11-28 12:19:13
+2016-11-28 12:19:14,320 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:19:14,525 start:190 [INFO] Detection status: -2, VAD: True
+2016-11-28 12:19:14,733 start:190 [INFO] Detection status: 0, VAD: False
+2016-11-28 12:19:14,940 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:19:15,145 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:19:15,353 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:19:15,557 start:190 [INFO] Detection status: 1, VAD: True
+2016-11-28 12:19:15,557 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:19:15,765 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:19:15,973 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:19:16,181 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:19:16,389 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:19:16,597 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:19:16,806 start:190 [INFO] Detection status: 0, VAD: False
+2016-11-28 12:19:17,013 _new_conn:207 [INFO] Starting new HTTP connection (1): vop.baidu.com
+2016-11-28 12:19:18,348 process:51 [INFO] ==Recognition result==: 之后吃药，
+2016-11-28 12:19:18,350 _new_conn:207 [INFO] Starting new HTTP connection (1): idc.emotibot.com
+2016-11-28 12:19:21,114 _new_conn:207 [INFO] Starting new HTTP connection (1): tsn.baidu.com
+2016-11-28 12:19:21,268 worker:106 [INFO] User: 好哒~
+Mirror: [u'\u597d\u54d2~']
+Cost(s): 4.26 Chat(s): 2.76
+2016-11-28 12:19:26,987 start:173 [INFO] Keyword 1 detected at time: 2016-11-28 12:19:26
+2016-11-28 12:19:27,852 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:19:28,056 start:190 [INFO] Detection status: 0, VAD: False
+2016-11-28 12:19:28,263 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:19:28,468 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:19:28,674 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:19:28,881 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:19:29,090 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:19:29,298 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:19:29,507 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:19:29,715 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:19:29,923 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:19:30,131 start:190 [INFO] Detection status: 0, VAD: False
+2016-11-28 12:19:30,342 _new_conn:207 [INFO] Starting new HTTP connection (1): vop.baidu.com
+2016-11-28 12:19:33,097 process:51 [INFO] ==Recognition result==: 提醒我半小时之后吃药，
+2016-11-28 12:19:33,099 _new_conn:207 [INFO] Starting new HTTP connection (1): idc.emotibot.com
+2016-11-28 12:19:35,663 _new_conn:207 [INFO] Starting new HTTP connection (1): tsn.baidu.com
+2016-11-28 12:19:36,193 worker:106 [INFO] User: 好的,过路先森会在:2016年11月28日周一12:49提醒你:吃药
+Mirror: [u'\u597d\u7684,\u8fc7\u8def\u5148\u68ee\u4f1a\u5728:2016\u5e7411\u670828\u65e5\u5468\u4e0012:49\u63d0\u9192\u4f60:\u5403\u836f', [{u'data': [{u'picurl': u'https://mmbiz.qlogo.cn/mmbiz/4UgDk0zQEIiahl7oPbzNK8cP2ibUABk9S4icE2MPIJUBuPiclLRVImt02r1aogibGPnqhiaHLic4FELyaSlZEO7NGJEdA/0', u'description': u'', u'title': u' \u521b\u5efa\u63d0\u9192\u6210\u529f'}, {u'picurl': u'https://mmbiz.qlogo.cn/mmbiz/4UgDk0zQEIiahl7oPbzNK8cP2ibUABk9S4vA47fKy94Y15icvLFQ8J0LlRAy1nwZu6DusDuuGYNr0mJYXExvsypjA/0', u'description': u'', u'title': u'\u65f6\u95f4: 2016\u5e7411\u670828\u65e5  \u5468\u4e00 12:49'}, {u'picurl': u'https://mmbiz.qlogo.cn/mmbiz/4UgDk0zQEIiahl7oPbzNK8cP2ibUABk9S4HYZgdvLZxYJ4TUxibWklS09Dkqv6kibenQ0jiaeLtaT6BQVCYsfwTzIGw/0', u'description': u'DESCRIPTION', u'title': u'\u4e8b\u4ef6: \u5403\u836f'}, {u'picurl': u'', u'description': u'', u'title': u'\u5bf9\u8fc7\u8def\u5148\u68ee\u8bf4\u300c\u67e5\u770b\u63d0\u9192\u4e8b\u9879\u300d,\u8fc7\u8def\u5148\u68ee\u53ef\u4ee5\u4e3a\u60a8\u5c55\u73b0\u6700\u8fd1\u7684\u63d0\u9192\u4e8b\u9879\u54e6'}], u'cmd': u'reminder', u'type': u'text', u'value': u'\u597d\u7684,\u8fc7\u8def\u5148\u68ee\u4f1a\u5728:2016\u5e7411\u670828\u65e5\u5468\u4e0012:49\u63d0\u9192\u4f60:\u5403\u836f'}]]
+Cost(s): 5.86 Chat(s): 2.56
+2016-11-28 12:20:16,039 start:173 [INFO] Keyword 1 detected at time: 2016-11-28 12:20:16
+2016-11-28 12:20:16,905 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:20:17,111 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:20:17,318 start:190 [INFO] Detection status: -2, VAD: False
+2016-11-28 12:20:17,525 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:20:17,730 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:20:17,939 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:20:18,145 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:20:18,353 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:20:18,561 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:20:18,770 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:20:18,979 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:20:19,186 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:20:19,395 start:190 [INFO] Detection status: 0, VAD: False
+2016-11-28 12:20:19,605 _new_conn:207 [INFO] Starting new HTTP connection (1): vop.baidu.com
+2016-11-28 12:20:29,844 receive:48 [WARNING] ==Baidu ASR failed==: Traceback (most recent call last):
+  File "/Users/juncaofish/projects/rpi-hmi-bot/handler.py", line 46, in receive
     return self.bv.asr(data, rate)
-  File "/Users/juncaofish/projects/rpi-hmi-bot/voicetools/api.py", line 179, in asr
+  File "/Users/juncaofish/projects/rpi-hmi-bot/voicetools/api.py", line 182, in asr
     return baiduclient.asr(json_data)
-  File "/Users/juncaofish/projects/rpi-hmi-bot/voicetools/clients.py", line 92, in asr
+  File "/Users/juncaofish/projects/rpi-hmi-bot/voicetools/clients.py", line 94, in asr
     raise e
 ReadTimeout: HTTPConnectionPool(host='vop.baidu.com', port=80): Read timed out. (read timeout=10)
 
-2016-11-25 11:10:13,796 worker:94 [WARNING] ==worker failed==:, Traceback (most recent call last):
-  File "/Users/juncaofish/projects/rpi-hmi-bot/handler.py", line 84, in worker
-    func, result = self.process(results)
-  File "/Users/juncaofish/projects/rpi-hmi-bot/handler.py", line 63, in process
+2016-11-28 12:20:29,845 worker:109 [WARNING] ==worker failed==: Traceback (most recent call last):
+  File "/Users/juncaofish/projects/rpi-hmi-bot/handler.py", line 101, in worker
+    func_list, args = self.process(results)
+  File "/Users/juncaofish/projects/rpi-hmi-bot/handler.py", line 51, in process
     logger.info('==Recognition result==: %s', results[0])
 TypeError: 'NoneType' object has no attribute '__getitem__'
 
-2016-11-25 11:11:32,767 loop:48 [INFO] Assistant closed...
-2016-11-25 11:11:35,302 loop:38 [INFO] Initializing...
-2016-11-25 11:11:35,311 _new_conn:756 [INFO] Starting new HTTPS connection (1): openapi.baidu.com
-2016-11-25 11:11:36,700 signal_handler:18 [INFO] Interrupted...
-2016-11-25 11:11:36,860 loop:46 [INFO] Assistant closed...
-2016-11-25 11:11:41,794 loop:38 [INFO] Initializing...
-2016-11-25 11:11:41,803 _new_conn:756 [INFO] Starting new HTTPS connection (1): openapi.baidu.com
-2016-11-25 11:12:01,208 loop:38 [INFO] Initializing...
-2016-11-25 11:12:01,217 _new_conn:756 [INFO] Starting new HTTPS connection (1): openapi.baidu.com
-2016-11-25 11:12:50,850 signal_handler:18 [INFO] Interrupted...
-2016-11-25 11:12:51,012 loop:46 [INFO] Assistant closed...
+2016-11-28 12:20:37,320 start:173 [INFO] Keyword 1 detected at time: 2016-11-28 12:20:37
+2016-11-28 12:20:38,189 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:20:38,396 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:20:38,600 start:190 [INFO] Detection status: 0, VAD: False
+2016-11-28 12:20:38,806 start:190 [INFO] Detection status: 0, VAD: False
+2016-11-28 12:20:39,011 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:20:39,217 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:20:39,424 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:20:39,632 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:20:39,840 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:20:40,049 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:20:40,258 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:20:40,465 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:20:40,672 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:20:40,880 start:190 [INFO] Detection status: 0, VAD: False
+2016-11-28 12:20:41,087 _new_conn:207 [INFO] Starting new HTTP connection (1): vop.baidu.com
+2016-11-28 12:20:44,370 process:51 [INFO] ==Recognition result==: 提醒我半小时之后吃药，
+2016-11-28 12:20:44,371 _new_conn:207 [INFO] Starting new HTTP connection (1): idc.emotibot.com
+2016-11-28 12:20:46,827 _new_conn:207 [INFO] Starting new HTTP connection (1): tsn.baidu.com
+2016-11-28 12:20:47,458 worker:106 [INFO] User: 好的,过路先森会在:2016年11月28日周一12:50提醒你:吃药
+Mirror: [u'\u597d\u7684,\u8fc7\u8def\u5148\u68ee\u4f1a\u5728:2016\u5e7411\u670828\u65e5\u5468\u4e0012:50\u63d0\u9192\u4f60:\u5403\u836f', [{u'data': [{u'picurl': u'https://mmbiz.qlogo.cn/mmbiz/4UgDk0zQEIiahl7oPbzNK8cP2ibUABk9S4icE2MPIJUBuPiclLRVImt02r1aogibGPnqhiaHLic4FELyaSlZEO7NGJEdA/0', u'description': u'', u'title': u' \u521b\u5efa\u63d0\u9192\u6210\u529f'}, {u'picurl': u'https://mmbiz.qlogo.cn/mmbiz/4UgDk0zQEIiahl7oPbzNK8cP2ibUABk9S4vA47fKy94Y15icvLFQ8J0LlRAy1nwZu6DusDuuGYNr0mJYXExvsypjA/0', u'description': u'', u'title': u'\u65f6\u95f4: 2016\u5e7411\u670828\u65e5  \u5468\u4e00 12:50'}, {u'picurl': u'https://mmbiz.qlogo.cn/mmbiz/4UgDk0zQEIiahl7oPbzNK8cP2ibUABk9S4HYZgdvLZxYJ4TUxibWklS09Dkqv6kibenQ0jiaeLtaT6BQVCYsfwTzIGw/0', u'description': u'DESCRIPTION', u'title': u'\u4e8b\u4ef6: \u5403\u836f'}, {u'picurl': u'', u'description': u'', u'title': u'\u5bf9\u8fc7\u8def\u5148\u68ee\u8bf4\u300c\u67e5\u770b\u63d0\u9192\u4e8b\u9879\u300d,\u8fc7\u8def\u5148\u68ee\u53ef\u4ee5\u4e3a\u60a8\u5c55\u73b0\u6700\u8fd1\u7684\u63d0\u9192\u4e8b\u9879\u54e6'}], u'cmd': u'reminder', u'type': u'text', u'value': u'\u597d\u7684,\u8fc7\u8def\u5148\u68ee\u4f1a\u5728:2016\u5e7411\u670828\u65e5\u5468\u4e0012:50\u63d0\u9192\u4f60:\u5403\u836f'}]]
+Cost(s): 6.38 Chat(s): 2.45
+2016-11-28 12:21:08,271 start:173 [INFO] Keyword 1 detected at time: 2016-11-28 12:21:08
+2016-11-28 12:21:09,137 start:190 [INFO] Detection status: -2, VAD: True
+2016-11-28 12:21:09,339 start:190 [INFO] Detection status: -2, VAD: True
+2016-11-28 12:21:09,548 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:21:09,756 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:21:09,964 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:21:10,170 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:21:10,378 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:21:10,585 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:21:10,792 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:21:11,001 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:21:11,210 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:21:11,417 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:21:11,626 start:190 [INFO] Detection status: 0, VAD: False
+2016-11-28 12:21:11,837 _new_conn:207 [INFO] Starting new HTTP connection (1): vop.baidu.com
+2016-11-28 12:21:13,859 process:51 [INFO] ==Recognition result==: 行我下午三点钟开会，
+2016-11-28 12:21:13,861 _new_conn:207 [INFO] Starting new HTTP connection (1): idc.emotibot.com
+2016-11-28 12:21:16,937 _new_conn:207 [INFO] Starting new HTTP connection (1): tsn.baidu.com
+2016-11-28 12:21:17,161 worker:106 [INFO] User: 美好的下午看点好看的帅哥图？
+Mirror: [u'\u7f8e\u597d\u7684\u4e0b\u5348\u770b\u70b9\u597d\u770b\u7684\u5e05\u54e5\u56fe\uff1f']
+Cost(s): 5.33 Chat(s): 3.08
+2016-11-28 12:21:23,892 start:173 [INFO] Keyword 1 detected at time: 2016-11-28 12:21:23
+2016-11-28 12:21:24,757 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:21:24,961 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:21:25,166 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:21:25,369 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:21:25,578 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:21:25,784 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:21:25,989 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:21:26,198 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:21:26,405 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:21:26,614 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:21:26,820 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:21:27,023 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:21:27,231 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:21:27,439 start:190 [INFO] Detection status: 0, VAD: False
+2016-11-28 12:21:27,650 _new_conn:207 [INFO] Starting new HTTP connection (1): vop.baidu.com
+2016-11-28 12:21:32,318 process:51 [INFO] ==Recognition result==: 提醒我下午三点开会，
+2016-11-28 12:21:32,320 _new_conn:207 [INFO] Starting new HTTP connection (1): idc.emotibot.com
+2016-11-28 12:21:34,752 _new_conn:207 [INFO] Starting new HTTP connection (1): tsn.baidu.com
+2016-11-28 12:21:35,418 worker:106 [INFO] User: 好的,过路先森会在:2016年11月28日周一15:00提醒你:开会
+Mirror: [u'\u597d\u7684,\u8fc7\u8def\u5148\u68ee\u4f1a\u5728:2016\u5e7411\u670828\u65e5\u5468\u4e0015:00\u63d0\u9192\u4f60:\u5f00\u4f1a', [{u'data': [{u'picurl': u'https://mmbiz.qlogo.cn/mmbiz/4UgDk0zQEIiahl7oPbzNK8cP2ibUABk9S4icE2MPIJUBuPiclLRVImt02r1aogibGPnqhiaHLic4FELyaSlZEO7NGJEdA/0', u'description': u'', u'title': u' \u521b\u5efa\u63d0\u9192\u6210\u529f'}, {u'picurl': u'https://mmbiz.qlogo.cn/mmbiz/4UgDk0zQEIiahl7oPbzNK8cP2ibUABk9S4vA47fKy94Y15icvLFQ8J0LlRAy1nwZu6DusDuuGYNr0mJYXExvsypjA/0', u'description': u'', u'title': u'\u65f6\u95f4: 2016\u5e7411\u670828\u65e5  \u5468\u4e00 15:00'}, {u'picurl': u'https://mmbiz.qlogo.cn/mmbiz/4UgDk0zQEIiahl7oPbzNK8cP2ibUABk9S4HYZgdvLZxYJ4TUxibWklS09Dkqv6kibenQ0jiaeLtaT6BQVCYsfwTzIGw/0', u'description': u'DESCRIPTION', u'title': u'\u4e8b\u4ef6: \u5f00\u4f1a'}, {u'picurl': u'', u'description': u'', u'title': u'\u5bf9\u8fc7\u8def\u5148\u68ee\u8bf4\u300c\u67e5\u770b\u63d0\u9192\u4e8b\u9879\u300d,\u8fc7\u8def\u5148\u68ee\u53ef\u4ee5\u4e3a\u60a8\u5c55\u73b0\u6700\u8fd1\u7684\u63d0\u9192\u4e8b\u9879\u54e6'}], u'cmd': u'reminder', u'type': u'text', u'value': u'\u597d\u7684,\u8fc7\u8def\u5148\u68ee\u4f1a\u5728:2016\u5e7411\u670828\u65e5\u5468\u4e0015:00\u63d0\u9192\u4f60:\u5f00\u4f1a'}]]
+Cost(s): 7.77 Chat(s): 2.43
+2016-11-28 12:22:17,026 start:173 [INFO] Keyword 1 detected at time: 2016-11-28 12:22:17
+2016-11-28 12:22:17,992 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:22:18,200 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:22:18,409 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:22:18,616 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:22:18,825 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:22:19,032 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:22:19,241 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:22:19,450 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:22:19,657 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:22:19,861 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:22:20,069 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:22:20,276 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:22:20,484 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:22:20,691 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:22:20,895 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:22:21,103 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:22:21,314 _new_conn:207 [INFO] Starting new HTTP connection (1): vop.baidu.com
+2016-11-28 12:22:33,236 receive:48 [WARNING] ==Baidu ASR failed==: Traceback (most recent call last):
+  File "/Users/juncaofish/projects/rpi-hmi-bot/handler.py", line 46, in receive
+    return self.bv.asr(data, rate)
+  File "/Users/juncaofish/projects/rpi-hmi-bot/voicetools/api.py", line 182, in asr
+    return baiduclient.asr(json_data)
+  File "/Users/juncaofish/projects/rpi-hmi-bot/voicetools/clients.py", line 94, in asr
+    raise e
+ReadTimeout: HTTPConnectionPool(host='vop.baidu.com', port=80): Read timed out. (read timeout=10)
+
+2016-11-28 12:22:33,237 worker:109 [WARNING] ==worker failed==: Traceback (most recent call last):
+  File "/Users/juncaofish/projects/rpi-hmi-bot/handler.py", line 101, in worker
+    func_list, args = self.process(results)
+  File "/Users/juncaofish/projects/rpi-hmi-bot/handler.py", line 51, in process
+    logger.info('==Recognition result==: %s', results[0])
+TypeError: 'NoneType' object has no attribute '__getitem__'
+
+2016-11-28 12:22:38,516 start:173 [INFO] Keyword 1 detected at time: 2016-11-28 12:22:38
+2016-11-28 12:22:39,379 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:22:39,589 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:22:39,793 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:22:39,997 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:22:40,205 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:22:40,415 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:22:40,623 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:22:40,831 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:22:41,035 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:22:41,243 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:22:41,452 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:22:41,659 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:22:41,868 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:22:42,076 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:22:42,281 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:22:42,488 start:190 [INFO] Detection status: 0, VAD: False
+2016-11-28 12:22:42,696 _new_conn:207 [INFO] Starting new HTTP connection (1): vop.baidu.com
+2016-11-28 12:22:52,191 process:51 [INFO] ==Recognition result==: 就是累丢脸六岁的，
+2016-11-28 12:22:52,193 _new_conn:207 [INFO] Starting new HTTP connection (1): idc.emotibot.com
+2016-11-28 12:22:55,268 _new_conn:207 [INFO] Starting new HTTP connection (1): tsn.baidu.com
+2016-11-28 12:22:55,489 worker:106 [INFO] User: 眯一会，休息一下吧~
+Mirror: [u'\u772f\u4e00\u4f1a\uff0c\u4f11\u606f\u4e00\u4e0b\u5427~']
+Cost(s): 12.80 Chat(s): 3.07
+2016-11-28 12:22:59,857 start:173 [INFO] Keyword 1 detected at time: 2016-11-28 12:22:59
+2016-11-28 12:23:00,722 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:23:00,931 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:23:01,138 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:23:01,342 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:23:01,551 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:23:01,757 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:23:01,965 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:23:02,173 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:23:02,382 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:23:02,587 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:23:02,793 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:23:02,999 start:190 [INFO] Detection status: 0, VAD: False
+2016-11-28 12:23:03,210 _new_conn:207 [INFO] Starting new HTTP connection (1): vop.baidu.com
+2016-11-28 12:23:05,986 process:51 [INFO] ==Recognition result==: 可能就影响，
+2016-11-28 12:23:05,987 _new_conn:207 [INFO] Starting new HTTP connection (1): idc.emotibot.com
+2016-11-28 12:23:08,765 _new_conn:207 [INFO] Starting new HTTP connection (1): tsn.baidu.com
+2016-11-28 12:23:09,055 worker:106 [INFO] User: 对的呢，可能影响很多人。
+Mirror: [u'\u5bf9\u7684\u5462\uff0c\u53ef\u80fd\u5f71\u54cd\u5f88\u591a\u4eba\u3002']
+Cost(s): 5.85 Chat(s): 2.78
+2016-11-28 12:24:31,133 start:173 [INFO] Keyword 1 detected at time: 2016-11-28 12:24:31
+2016-11-28 12:24:32,097 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:24:32,307 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:24:32,513 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:24:32,719 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:24:32,924 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:24:33,132 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:24:33,337 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:24:33,543 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:24:33,747 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:24:33,953 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:24:34,160 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:24:34,364 start:190 [INFO] Detection status: 1, VAD: True
+2016-11-28 12:24:34,365 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:24:34,572 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:24:34,776 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:24:34,985 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:24:35,192 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:24:35,401 _new_conn:207 [INFO] Starting new HTTP connection (1): vop.baidu.com
+2016-11-28 12:24:36,310 process:51 [INFO] ==Recognition result==: 需要，
+2016-11-28 12:24:36,311 _new_conn:207 [INFO] Starting new HTTP connection (1): idc.emotibot.com
+2016-11-28 12:24:39,075 _new_conn:207 [INFO] Starting new HTTP connection (1): tsn.baidu.com
+2016-11-28 12:24:39,320 worker:106 [INFO] User: 过路先森随时都在
+Mirror: [u'\u8fc7\u8def\u5148\u68ee\u968f\u65f6\u90fd\u5728']
+Cost(s): 3.92 Chat(s): 2.76
+2016-11-28 12:25:39,746 start:173 [INFO] Keyword 1 detected at time: 2016-11-28 12:25:39
+2016-11-28 12:25:40,706 start:190 [INFO] Detection status: -2, VAD: True
+2016-11-28 12:25:40,911 start:190 [INFO] Detection status: -2, VAD: True
+2016-11-28 12:25:41,118 start:190 [INFO] Detection status: -2, VAD: False
+2016-11-28 12:25:41,321 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:25:41,530 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:25:41,738 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:25:41,947 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:25:42,149 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:25:42,357 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:25:42,541 signal_handler:18 [INFO] Interrupted...
+2016-11-28 12:25:42,543 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:25:42,749 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:25:42,957 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:25:43,165 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:25:43,373 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:25:43,582 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:25:43,787 start:190 [INFO] Detection status: 0, VAD: True
+2016-11-28 12:25:43,998 _new_conn:207 [INFO] Starting new HTTP connection (1): vop.baidu.com
+2016-11-28 12:25:45,736 process:51 [INFO] ==Recognition result==: 一个人不想去看天蝎，
+2016-11-28 12:25:45,738 _new_conn:207 [INFO] Starting new HTTP connection (1): idc.emotibot.com
+2016-11-28 12:25:48,399 _new_conn:207 [INFO] Starting new HTTP connection (1): tsn.baidu.com
+2016-11-28 12:25:49,082 worker:106 [INFO] User: 你觉得占星学所说的事情是真的么？
+Mirror: [u'\u4f60\u89c9\u5f97\u5360\u661f\u5b66\u6240\u8bf4\u7684\u4e8b\u60c5\u662f\u771f\u7684\u4e48\uff1f']
+Cost(s): 5.09 Chat(s): 2.66
+2016-11-28 12:25:49,240 loop:46 [INFO] Assistant closed...
+2016-11-28 13:38:31,820 loop:38 [INFO] Initializing...
+2016-11-28 13:38:31,829 _new_conn:756 [INFO] Starting new HTTPS connection (1): openapi.baidu.com
+2016-11-28 13:39:11,707 signal_handler:18 [INFO] Interrupted...
+2016-11-28 13:39:11,839 loop:46 [INFO] Assistant closed...

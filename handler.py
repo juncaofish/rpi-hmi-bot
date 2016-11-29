@@ -1,34 +1,20 @@
 # coding: utf-8
 import logging
 import time
+import threading
 import traceback
 
 from snowboy import snowboydecoder
 
-from settings import (BasicConfig as BC, HotwordConfig as HWC)
+from settings import (BasicConfig as BC,
+                      HotwordConfig as HWC, ReminderConfig as RC)
+
 from utils import AudioHandler
 from voicetools import BaiduVoice, Emotibot
+from skills import reminder
 
 logger = logging.getLogger()
 
-# FUNC_MAP = {
-#     Keyword(['备忘录', ]).value: 'memo_today',
-#     Keyword(['提醒', ]).value: 'memo_today',
-#     Keyword(['备忘录', '今天']).value: 'memo_today',
-#     Keyword(['提醒', '今天']).value: 'memo_today',
-#     Keyword(['备忘录', '明天']).value: 'memo_tomo',
-#     Keyword(['提醒', '明天']).value: 'memo_tomo',
-#     Keyword(['备忘录', '播放']).value: 'play_memo_today',
-#     Keyword(['提醒', '播放']).value: 'play_memo_today',
-#     Keyword(['备忘录', '播放', '明天']).value: 'play_memo_tomo',
-#     Keyword(['提醒', '播放', '明天']).value: 'play_memo_tomo',
-#     Keyword(['备忘录', '删除']).value: 'del_all_memo',
-#     Keyword(['提醒', '删除']).value: 'del_all_memo',
-#     Keyword(['备忘录', '删除', '最后']).value: 'del_last_memo',
-#     Keyword(['提醒', '删除', '最后']).value: 'del_last_memo',
-#     Keyword(['备忘录', '删除', '第一条']).value: 'del_first_memo',
-#     Keyword(['提醒', '删除', '第一条']).value: 'del_first_memo'
-# }
 FUNC_MAP = dict()
 
 
@@ -49,6 +35,7 @@ class BaseHandler(object):
         self.audio_handler = AudioHandler()
         self.detector = snowboydecoder.HotwordDetector(
             HWC.HOTWORD_MODEL, sensitivity=HWC.SENSITIVITY, audio_gain=HWC.GAIN)
+        self.reminder_handler = reminder.ReminderSqlite(RC.DB_PATH, RC.DB_TABLE)
 
     def __repr__(self):
         return '<BaseHandler>'
@@ -61,11 +48,25 @@ class BaseHandler(object):
 
     def process(self, results):
         logger.info('==Recognition result==: %s', results[0])
-        return FUNC_MAP.get("None", 'default'), results[0]
+        func = getattr(ActionHandler, FUNC_MAP.get("None", 'default'))
+        func_list, args = func(self, results[0])
+        return func_list, args
 
-    def execute(self, func_name, result):
-        func = getattr(ActionHandler, func_name)
-        return func(self, result)
+    def execute(self, func_list, args):
+
+        for func, arg in zip(func_list, args):
+            if func == 'tts':
+                t = threading.Thread(target=self.feedback, args=(arg,))
+            elif func == 'reminder':
+                # sqlite operation is not allowed in a seperate thread
+                self.reminder_handler.handler(arg)
+                continue
+            elif func == 'light':
+                t = threading.Thread(target=self.lightup, args=(1.5,))
+            t.setDaemon(True)
+            t.start()
+        t.join()
+        return args
 
     def feedback(self, content=None):
         if content:
@@ -77,18 +78,21 @@ class BaseHandler(object):
             else:
                 self.audio_handler.aplay()
 
+    def lightup(self, delay=3):
+        time.sleep(delay)
+        logger.info("light on for %d seconds" % delay)
+
     def worker(self, data, rate):
         try:
             start = time.time()
             results = self.receive(data, rate)
-            func, result = self.process(results)
             chat_start = time.time()
-            content = self.execute(func, result)
+            func_list, args = self.process(results)
             chat_end = time.time()
-            self.feedback(content)
+            results = self.execute(func_list, args)
             end = time.time()
             logger.info("User: %s\nMirror: %s\nCost(s): %.2f Chat(s): %.2f" %
-                        (results[0], content, end-start, chat_end-chat_start))
+                        (results[0], str(results), end-start, chat_end-chat_start))
 
         except Exception:
             logger.warn('==worker failed==: %s', traceback.format_exc())
@@ -103,12 +107,20 @@ class ActionHandler(object):
     def default(base_handler, result):
         robot = Emotibot(BC.APP_ID, BC.USER_ID)
         try:
-            content = robot.ask_emotibot(result)
+            func_list, args = robot.ask_emotibot(result)
         except Exception:
             logger.warn(traceback.format_exc())
-            return '没有找到问题的答案'
+            return ['tts'], ['没有找到答案']
         else:
-            return content
+            return func_list, args
+
+    # @staticmethod
+    # def _memo(date, base_handler):
+    #     base_handler.feedback('请说出记录内容')
+    #     audio = base_handler.audio_handler.arecord(6, is_buffer=True)
+    #     cache_handler = CacheHandler()
+    #     cache_handler.zset(date, audio, timestamp(), 86400*3)
+    #     return '完成记录'
 
 #     @staticmethod
 #     def _memo(date, base_handler):
